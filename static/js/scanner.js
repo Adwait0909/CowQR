@@ -49,20 +49,20 @@
 
   const html5QrCode = new Html5Qrcode("reader");
 
-  const config = {
+const config = {
     fps: 10,
     qrbox: {
         width: 250,
         height: 250
     }
 };
-  html5QrCode
-    .start(
-      { facingMode: "environment" },
-      config,
-      onScanSuccess,
-      onScanFailure
-    )
+
+html5QrCode.start(
+    { facingMode: "environment" },
+    config,
+    onScanSuccess,
+    onScanFailure
+);
     .then(function () {
       statusEl.textContent =
         "Camera active — point it at a cow's QR tag.";
