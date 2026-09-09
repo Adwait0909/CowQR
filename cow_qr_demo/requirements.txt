@@ -1,0 +1,12 @@
+Flask==3.0.3
+mysql-connector-python==8.4.0
+qrcode==7.4.2
+Pillow==10.4.0
+Werkzeug==3.0.3
+Flask
+Flask-Cors
+qrcode
+Pillow
+mysql-connector-python
+gunicorn
+python-dotenv
